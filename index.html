@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random User Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="firstPage">
+        <button class="showLatestBtn button">SHOW 10 LATEST USERS</button>
+        <div class="btnContainer">
+            <button class="newUserBtn button">GENERATE NEW USER</button>
+        </div>
+        
+        <div class="userContainer" hidden>
+            <div class="photoContainer">
+                <div class="photo"><img class="img" src="" alt=""></div>
+            </div>
+            <div class="dataContainer">
+                <p class="firstNameParagraph">First name: <span class="firstNameSpan"></span></p>
+                <p class="lastNameParagraph">Last name: <span class="lastNameSpan"></span></p>
+                <p class="registerDateParagraph">Register Date: <span class="registerDateSpan"></span></p>
+                <p class="nationalityParagraph">Nationality: <span class="nationalitySpan"></span></p>
+                <p class="locationAddressParagraph">Location Address: <span class="locationAddressSpan"></span></p>
+            </div>
+        </div>
+        <div class="inputContainer" hidden>
+            <input class="checkbox" type="checkbox" name="hideAddress" onclick="toggleAddress()">
+            <label for="hideAddress">Hide Address</label>
+        </div>
+    </div>
+    
+    <div class="secondPage" hidden>
+        <h1 class="title">10 latest generated users</h1>
+        <button class="sortByLastNameBtn button">SORT BY LAST NAME</button>
+        <button class="sortByRegistrationDateBtn button">SORT BY REGISTRATION DATE</button>
+        <div class="latestUsersContainer">
+        <div class="latestUser">
+            User1 > First Name: <span class="firstName1"></span>, Last Name: <span class="lastName1"></span>, Registration Date: <span class="registerDate1"></span>, Country: <span class="country1"></span>
+       </div>
+        <div class="latestUser">
+           User2 > First Name: <span class="firstName2"></span>, Last Name: <span class="lastName2"></span>, Registration Date: <span class="registerDate2"></span>, Country: <span class="country2"></span>
+       </div>
+       <div class="latestUser">
+           User3 > First Name: <span class="firstName3"></span>, Last Name: <span class="lastName3"></span>, Registration Date: <span class="registerDate3"></span>, Country: <span class="country3"></span>
+       </div>
+       <div class="latestUser">
+           User4 > First Name: <span class="firstName4"></span>, Last Name: <span class="lastName4"></span>, Registration Date: <span class="registerDate4"></span>, Country: <span class="country4"></span>
+       </div>
+       <div class="latestUser">
+           User5 > First Name: <span class="firstName5"></span>, Last Name: <span class="lastName5"></span>, Registration Date: <span class="registerDate5"></span>, Country: <span class="country5"></span>
+       </div>
+       <div class="latestUser">
+           User6 > First Name: <span class="firstName6"></span>, Last Name: <span class="lastName6"></span>, Registration Date: <span class="registerDate6"></span>, Country: <span class="country6"></span>
+       </div>
+       <div class="latestUser">
+           User7 > First Name: <span class="firstName7"></span>, Last Name: <span class="lastName7"></span>, Registration Date: <span class="registerDate7"></span>, Country: <span class="country7"></span>
+       </div>
+       <div class="latestUser">
+           User8 > First Name: <span class="firstName8"></span>, Last Name: <span class="lastName8"></span>, Registration Date: <span class="registerDate8"></span>, Country: <span class="country8"></span>
+       </div>
+       <div class="latestUser">
+           User9 > First Name: <span class="firstName9"></span>, Last Name: <span class="lastName9"></span>, Registration Date: <span class="registerDate9"></span>, Country: <span class="country9"></span>
+       </div>
+       <div class="latestUser">
+           User10 > First Name: <span class="firstName10"></span>, Last Name: <span class="lastName10"></span>, Registration Date: <span class="registerDate10"></span>, Country: <span class="country10"></span>
+       </div>
+      
+</div>
+            <button class="goBackBtn button">GO BACK</button>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
